@@ -1,0 +1,279 @@
+<html>
+
+	<head>
+		<title>爱点-实现年轻化公益的App</title>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- CSS 
+        ================================================== -->
+		<!-- Bootstrap 3-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<!-- Google Fonts -->
+<!--		<link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+		<!-- Template Styles -->
+		<link href="css/style.css" rel="stylesheet" media="screen">-->
+		
+		<!--Google Analytics-->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-86760927-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+
+		<style type="text/css">
+			#qr img{
+				width: 150px;
+				height: 150px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!-- NAVBAR
+	      ================================================== -->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+
+					<!--Replace text with your app name or logo image-->
+					<a class="navbar-brand" href="#">爱点</a>
+
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a onClick="$('header').animatescroll({padding:71});">开始</a>
+						</li>
+						<li>
+							<a onClick="$('.detail').animatescroll({padding:71});">详情</a>
+						</li>
+						<li>
+							<a onClick="$('.features').animatescroll({padding:71});">特点</a>
+						</li>
+						<li>
+							<a onClick="$('.social').animatescroll({padding:71});">反馈 </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- HEADER
+	   ================================================== -->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>爱点</h1>
+						<p class="lead">应用引导页</p>
+
+						<div class="carousel-iphone">
+							<div id="carousel-example-generic" class="carousel slide">
+
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+									<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="img/screenshots/app-1.png" alt="App Screen 1">
+									</div>
+									<div class="item">
+										<img src="img/screenshots/app-2.png" alt="App Screen 2">
+									</div>
+									<div class="item">
+										<img src="img/screenshots/app-3.png" alt="App Screen 3">
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="copyrights">Collect from
+			<a href="http://www.cssmoban.com/">网页模板</a>
+		</div>
+
+		<!-- PURCHASE
+	      ================================================== -->
+		<section class="purchase">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-2 col-md-8">
+						<h1>喜欢就快来下载吧</h1>
+						<p class="lead">通过 APP 平台，以拍卖的模式让人在互动中体验到公益的简单。
+						</p>
+						<button type="button" onclick="downloadApp()" class="app-store">立即下载</button>
+					</div>
+					<div id="qr">
+						<img src="img/qr_code.png" alt="">
+						<br>
+						<span type="button" class="">扫一扫，下载安装包</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PAYOFF 
+	      ================================================== -->
+		<section class="payoff">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>因为有梦想，所以坚持。曾几何时，我们踌躇满志，曾几何时，我们痛定思痛，只因为公益梦，我们咬牙坚持。为的就是让公益现
+状变的更好一点。一群充满激情的年轻人，没有任何的背景，但都希望靠自己的努力改变自己的人生。</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- DETAILS 
+	      ================================================== -->
+		<section class="detail">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="carousel-example-generic-2" class="carousel slide">
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-sm-12 col-md-offset-1 col-md-6">
+											<h1>发起项目</h1>
+											<p>经过认证后的公益组织申请发起项目，申请后由官方进行核实，核实成功后将加入项目流中进行展示。 项目的详细展示页面显示发起方、项目简介、帮助人群等信息，提供发起方详情入口，可进入查看发起方的详细情况。
+											</p>
+										</div>
+										<div class="col-sm-12 col-md-5">
+											<div class="app-screenshot">
+												<img src="img/screenshots/app-1.png" class="img-responsive" alt="App Screen 1">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="col-sm-12 col-md-offset-1 col-md-6">
+											<h1>拍卖过程</h1>
+											<p>名人的物品发布成功后，将进入物品展示流，根据所设的的时间开始倒计时，大家开始竞拍，为防止恶意竞拍，出价之前需要缴纳押金，押金的金额由物品底价按一定比例进行折算，此过程依赖于虚拟币，拍卖结束以后，押金统一返回个人账户，最终拍得的用户要在24小时内进行付款，否则订单无效。付款结束后，名人帐号上会收到成交人的部分信息，便于按此信息进入发货。</p>
+										</div>
+										<div class="col-sm-12 col-md-5">
+											<div class="app-screenshot">
+												<img src="img/screenshots/app-2.png" class="img-responsive" alt="App Screen 2">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="col-sm-12 col-md-offset-1 col-md-6">
+											<h1>账号模式</h1>
+											<p>在登陆账号后的“我的”界面，你可以查询自己在爱点拍卖记录、出价记录、发表的动态、粉丝等等。在账号设置界面可以设置、更新自己的收货地址、昵称、用户名、头像、性别、支付/登陆密码、微博绑定等。名人、公益组织帐号接入微博实名认证，通过官方人工进行确认，确认后即可拥有发布物品/项目的权限，并增加V标识。</p>
+										</div>
+										<div class="col-sm-12 col-md-5">
+											<div class="app-screenshot">
+												<img src="img/screenshots/app-3.png" class="img-responsive" alt="App Screen 3">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FEATURES
+	      ================================================== -->
+		<section class="features">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-4">
+						<div class="circle"><i class="icon-bookmark"></i></div>
+						<h2>名人互动</h2>
+						<p>每次活动都会请名人和粉丝来共同参与，带动用户的积极性，更能体现爱点APP救助活动的真实性</p>
+					</div>
+
+					<div class="col-md-4">
+						<div class="circle"><i class="icon-keypad"></i></div>
+						<h2>主页动态 Scrolling</h2>
+						<p>随时更新爱点最新项目以及项目走向与进度。最重要的是每个人的爱点捐款走向，会在项目完成后公布，每个活动项目动用多少钱，钱来源谁，都会显示于此。</p>
+					</div>
+
+					<div class="col-md-4">
+						<div class="circle"><i class="icon-like"></i></div>
+						<h2>盈利模式 Design</h2>
+						<p>爱点采用充值虚拟R币模式，所有拍卖都用R币来实现。一块钱10个R币。R币能支付。平台上所有的交易都将采用R币。通过购买虚拟进币来进行拍卖，拍卖全程用公益币进行交易。以上全部收入三七比例分开，七成做公益，三成做运营。</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- SOCIAL
+	     ================================================== -->
+		<section class="social">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>联系我们</h2>
+						<span margin-top:30px;>Email:18454837733@163.com Tel:15589618535</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- GET IT 
+	     ================================================== -->
+		<section class="get-it">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<hr />
+						Copyright © 2016 GoldenRatio. All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- JAVASCRIPT
+	     ================================================== -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/animatescroll.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/retina.min.js"></script>
+		
+		<!--CNZZ Analytics-->
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260738930'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1260738930%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</html>
